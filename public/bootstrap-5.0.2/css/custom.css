@@ -1,0 +1,28 @@
+@import 'bootstrap.min.css';
+
+body {
+    background: url('/img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+div #title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+#title #img {
+    height: 70vh;
+    padding-top: 20vh;
+    padding-left: 10vw;
+}
+#title h1 {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #fff;
+    align-self: flex-end;
+    flex-direction: column;
+}

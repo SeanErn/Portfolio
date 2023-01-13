@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "FunkyChicken's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanErn/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "FunkyChicken @SeanErn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeanErn/Portfolio/issues"
+  },
+  "homepage": "https://github.com/SeanErn/Portfolio#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ip": "^1.1.8"
+  }
+}
