@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const ip = require('ip');
-var port = 80; //default port
+var port = 8000; //default port
 
 //GET IP ADDR
 var addr = ip.address();
