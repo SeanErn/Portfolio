@@ -1,5 +1,6 @@
 @import 'bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+
 body {
     background: url('/img/bg2.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -21,14 +22,13 @@ top: 40vh;
 
 div#modal h1 {
 
-font-family: 'Roboto';
+font-family: 'Cairo', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 96px;
 line-height: 112px;
 
 color: #FFFFFF;
-
 }
 
 #img{
@@ -83,5 +83,26 @@ color: #FFFFFF;
 
 flex: none;
 flex-grow: 0;
+text-decoration: none;
+
 }
+
+div#nav div#wrapper a:hover{
+color: #d2d2d2;
+cursor: pointer;
+}
+
+div#modal h1:hover{
+    animation: modal_hover 1s ease-in-out;
+    color:#cb6496;
+}
+
+@keyframes modal_hover {
+    from {color: #FFFFFF;}
+    to {color: #cb6496;}
+}
+
+.animate__animated.animate__slideInLeft {
+    --animate-duration: 1s;
+  }  
 

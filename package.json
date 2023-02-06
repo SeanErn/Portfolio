@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/SeanErn/Portfolio#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "express": "^4.18.2",
     "ip": "^1.1.8"
   }
