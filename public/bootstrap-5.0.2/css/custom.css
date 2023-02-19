@@ -29,6 +29,8 @@ font-size: 96px;
 line-height: 112px;
 
 color: #FFFFFF;
+transition: color 0.5s;
+
 }
 
 #img{
@@ -84,7 +86,7 @@ color: #FFFFFF;
 flex: none;
 flex-grow: 0;
 text-decoration: none;
-
+transition: color 0.5s;
 }
 
 div#nav div#wrapper a:hover{
@@ -92,14 +94,16 @@ color: #d2d2d2;
 cursor: pointer;
 }
 
+div#nav div#wrapper a:hover:not(:hover){
+    color:#FFFFFF;
+}
+
 div#modal h1:hover{
-    animation: modal_hover 1s ease-in-out;
     color:#cb6496;
 }
 
-@keyframes modal_hover {
-    from {color: #FFFFFF;}
-    to {color: #cb6496;}
+div#modal h1:hover:not(:hover){
+    color:#FFFFFF;
 }
 
 .animate__animated.animate__slideInLeft {
