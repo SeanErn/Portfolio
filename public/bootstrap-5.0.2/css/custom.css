@@ -8,6 +8,18 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
+
+body::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    pointer-events: none; /* Allow clicks to pass through to elements below */
+  }
+
 div#modal {
 display: flex;
 flex-direction: column;
@@ -27,10 +39,17 @@ font-style: normal;
 font-weight: 400;
 font-size: 96px;
 line-height: 112px;
-
+white-space: nowrap;
 color: #FFFFFF;
-transition: color 0.5s;
+letter-spacing: normal;
+}
 
+div#modal h1 span{
+    transition: color 0.2s;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0em;
 }
 
 #img{
@@ -89,24 +108,107 @@ text-decoration: none;
 transition: color 0.5s;
 }
 
+
 div#nav div#wrapper a:hover{
 color: #d2d2d2;
 cursor: pointer;
 }
 
-div#nav div#wrapper a:hover:not(:hover){
+div#nav div#wrapper a:not(:hover){
     color:#FFFFFF;
 }
-
-div#modal h1:hover{
+/* --- HOVER ---
+div#modal h1 span:hover{
+    transition-duration: 0.1s;
     color:#cb6496;
 }
 
-div#modal h1:hover:not(:hover){
+div#modal h1 span:not(:hover){
+    transition-duration: 5s;
     color:#FFFFFF;
 }
+*/
+h1 span {
+    color: white;
+    display: inline-block;
+    position: relative;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
 
 .animate__animated.animate__slideInLeft {
     --animate-duration: 1s;
   }  
 
+  .wave {
+    animation-name: wave;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: translateY(0);
+      color:#FFFFFF;
+    }
+    25% {
+      transform: translateY(-5px); /* Move up slightly */
+      color: #cb6496;
+    }
+    75% {
+      transform: translateY(5px); /* Move down slightly */
+      color: #cb6496;
+    }
+    100% {
+      transform: translateY(0);
+      color:#FFFFFF;
+    }
+
+  }
+
+  .scroll-down-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 18px;
+    color: #fff;
+    animation: arrowMove 1s ease-in-out infinite alternate;
+  }
+  
+  .scroll-down-arrow img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    color: #FFFFFF;
+    animation-name: arrow;
+  }
+  
+  .scroll-down-arrow p {
+    margin: 0;
+  }
+  
+
+  @keyframes arrowMove {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+
+/* -- HOME -- */
+#home {
+    height: 100vh; /* set height to viewport height */
+    position: relative;
+  }
+  /* -- ABOUT -- */
+  #about {
+    height: 100vh; /* set height to viewport height */
+    background-color: #000000;
+  }
+  
