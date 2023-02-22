@@ -2,35 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>I'm @SeanErn</title>
-    <link rel="icon" href="img/chicken.svg" type="image/svg"/>
-    <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="bootstrap-5.0.2/css/custom.css"/>
-    <link href="bootstrap-5.0.2/js/bootstrap.bundle.min.js"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.1.0/browser/overlayscrollbars.browser.es6.min.js" integrity="sha512-1ZEhZBqxxLcq+dqd/djJm4jmpuT2qvHvsLGHkvKbCwde7AN6uz+WSIQpEOmDirXOrbeUIy0hbgajST3wtykKNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.1.0/styles/overlayscrollbars.min.css" integrity="sha512-SWInhnSfP5LyduITbBbAzzj0LCCw6CBqQIfLMACCnuihNPoTLoOGvT+YVmHsV6ub1VWKrQ2wPhZFmR+c5GZUMw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script>(function($){"use strict";
-    $(window).on("load",function(){
-      $("body").overlayScrollbars({
-        className       : "os-theme-dark",
-        resize          : "none",
-        sizeAutoCapable : true,
-        clipAlways      : true,
-        normalizeRTL    : true,
-        paddingAbsolute : false,
-        autoUpdate      : null,
-        autoUpdateInterval: 33
-      });
-    });
-    })(jQuery);</script>
-  })</script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I'm @SeanErn</title>
+    <link rel="icon" type="image/svg" href="assets/img/chicken.svg"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/animateCss/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/OverlayScrollbarsMin/css/OverlayScrollbars.min.css" />
+    <script type="text/javascript" src="assets/lib/jQuery/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="assets/lib/OverlayScrollbarsMin/js/jquery.overlayScrollbars.min.js"></script>
+    <script type="text/javascript" src="assets/js/wave.js"></script>
+    <script type="text/javascript" src="assets/js/scroll.js"></script>
   </head>
-  <script src="scripts/wave.js"></script>
   <body id="mainBody">
     <section id="home">
     <div id="modal" class="animate__animated animate__slideInLeft">
@@ -40,7 +23,7 @@
         <span>J</span><span>a</span><span>v</span><span>a</span><span>/</span><span>J</span><span>S</span><span>&nbsp;</span><span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
       </h1>
     </div>
-<img id="img" src="img/chicken.svg" alt="chicken" class="animate__animated animate__fadeInDown"/>
+<img id="img" src="assets/img/chicken.svg" alt="chicken" class="animate__animated animate__fadeInDown"/>
     <div id="nav" class="animate__animated animate__fadeInDown">
       <div id="wrapper">
         <a id="home_BTN" href="#home">HOME</a>
@@ -50,12 +33,14 @@
       </div>
     </div>
 <div class="scroll-down-arrow">
-  <img src="img/arrow-down-24.svg" alt="Scroll down arrow">
-  <p>Scroll down to learn more</p>
+  <span>Scroll down</span>
+  <img src="assets/img/arrow-down-24.svg" alt="Scroll down arrow">
 </div>
     </section>
     <section id="about">
-
+      <div class="title">
+      <h2>Who am I?</h2>
+    </div>
     </section>
   </body>
   </html>
