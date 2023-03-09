@@ -1,6 +1,10 @@
 @import 'bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 section#home {
   background: url('/assets/img/bg2.jpg') no-repeat center center;
   -webkit-background-size: cover;
