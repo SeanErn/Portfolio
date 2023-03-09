@@ -1,8 +1,34 @@
 @import 'bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
 
+:root {
+  --themePrimary: #ffffff;
+  --themeLighterAlt: #767676;
+  --themeLighter: #a6a6a6;
+  --themeLight: #c8c8c8;
+  --themeTertiary: #d0d0d0;
+  --themeSecondary: #dadada;
+  --themeDarkAlt: #eaeaea;
+  --themeDark: #f4f4f4;
+  --themeDarker: #f8f8f8;
+  --neutralLighterAlt: #151517;
+  --neutralLighter: #1e1e21;
+  --neutralLight: #2d2d30;
+  --neutralQuaternaryAlt: #363639;
+  --neutralQuaternary: #3d3d41;
+  --neutralTertiaryAlt: #5c5c61;
+  --neutralTertiary: #ffbcdd;
+  --neutralSecondary: #ffc7e2;
+  --neutralSecondaryAlt: #ffc7e2;
+  --neutralPrimaryAlt: #ffd2e8;
+  --neutralPrimary: #ff9ccc;
+  --neutralDark: #ffe8f3;
+  --black: #fff3f9;
+  --white: #0c0c0d;
+}
+
 section#home {
-  background: url('/assets/img/bg2.jpg') no-repeat center center;
+  background: url('/public/assets/img/bg2.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -142,11 +168,11 @@ h1 span {
     }
     25% {
       transform: translateY(-5px); /* Move up slightly */
-      color: #cb6496;
+      color: #ff9ccc;
     }
     75% {
       transform: translateY(5px); /* Move down slightly */
-      color: #cb6496;
+      color: #ff9ccc;
     }
     100% {
       transform: translateY(0);
@@ -202,17 +228,6 @@ h1 span {
     pointer-events: none; /* Allow clicks to pass through to elements below */
   }
 
-/* -- HOME -- */
-#home {
-    height: 100vh; /* set height to viewport height */
-    position: relative;
-  }
-  /* -- ABOUT -- */
-  #about {
-    height: 100vh; /* set height to viewport height */
-    background-color: #0c0c0d;
-  }
-
   div .title {
   display: flex;
   flex-direction: column;
@@ -234,6 +249,13 @@ h1 span {
     white-space: nowrap;
     color: #FFFFFF;
     letter-spacing: normal;
+  }
+
+  
+/* -- HOME -- */
+#home {
+    height: 100vh; /* set height to viewport height */
+    position: relative;
   }
 
   
