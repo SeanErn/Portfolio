@@ -1,6 +1,9 @@
 @import 'bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --themePrimary: #ffffff;
   --themeLighterAlt: #767676;
