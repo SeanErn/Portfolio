@@ -1,5 +1,21 @@
 /* -- ABOUT -- */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+
 #about {
+  color: #FFFFFF;
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
     height: 100vh; /* set height to viewport height */
     background-color: #0c0c0d;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 25vw 1fr;
+  }
+
+  #about > div {
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+    text-align: center;
+    margin: auto;
   }
